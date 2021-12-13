@@ -1,0 +1,16 @@
+.avatar{
+    border-radius: 50%;
+}
+body{
+    
+        background: linear-gradient(to bottom, #ff9999 0%, #ff99cc 100%);
+}
+.container{
+    background-color:white;
+    padding: 10px;
+    margin:5px;
+    border-radius: 10px;
+    display: flex;
+    gap:13px;
+    align-items: center;
+}
