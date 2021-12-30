@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surveyform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+      integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form action="" method="POST" id="survey-form" class="container">
+      <label for="name">
+        <h5>Name <span>*</span></h5>
+      </label>
+      <div class="username">
+        <div>
+          <input type="text" required="required" /> <br />
+          <label for="firstname">First</label>
+        </div>
+
+        <div>
+          <input type="text" required /> <br />
+          <label for="lastname">Last</label>
+        </div>
+      </div>
+      <br />
+      <label for="email">
+        <h5>Email <span>*</span></h5> </label
+      ><br />
+      <input class="col-md-6" type="email" />
+      <br />
+      <br />
+      <div>
+        <h5>Your Experience <span>*</span></h5>
+      </div>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+
+      <h5>How satisfied are you with <span>*</span></h5>
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr class="text-center">
+            <th scope="col"></th>
+            <th scope="col">Very Unsatisfied</th>
+            <th scope="col">Unsatisfied</th>
+            <th scope="col">Neutral</th>
+            <th scope="col">Satisfied</th>
+            <th scope="col">Very Satisfied</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="width: 250px" scope="row">Purchase</th>
+            <td><input type="radio" name="purchase" /></td>
+            <td><input type="radio" name="purchase" /></td>
+            <td><input type="radio" name="purchase" /></td>
+            <td><input type="radio" name="purchase" /></td>
+            <td><input type="radio" name="purchase" /></td>
+          </tr>
+          <tr>
+            <th scope="row">Service</th>
+            <td><input type="radio" name="service" /></td>
+            <td><input type="radio" name="service" /></td>
+            <td><input type="radio" name="service" /></td>
+            <td><input type="radio" name="service" /></td>
+            <td><input type="radio" name="service" /></td>
+          </tr>
+          <tr>
+            <th scope="row">Company Overall</th>
+            <td><input type="radio" name="company Overall" /></td>
+            <td><input type="radio" name="company Overall" /></td>
+            <td><input type="radio" name="company Overall" /></td>
+            <td><input type="radio" name="company Overall" /></td>
+            <td><input type="radio" name="company Overall" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <h5>How likely are you to<span>*</span></h5>
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr class="text-center">
+            <th scope="col"></th>
+            <th scope="col">Very Unlikely</th>
+            <th scope="col">Unlikely</th>
+            <th scope="col">Neutral</th>
+            <th scope="col">Likely</th>
+            <th scope="col">Very Likely</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="width: 250px" scope="row">Buy from us again</th>
+            <td><input type="radio" name="buy_again" /></td>
+            <td><input type="radio" name="buy_again" /></td>
+            <td><input type="radio" name="buy_again" /></td>
+            <td><input type="radio" name="buy_again" /></td>
+            <td><input type="radio" name="buy_again" /></td>
+          </tr>
+          <tr>
+            <th scope="row">Recommend our products to others</th>
+            <td><input type="radio" name="products_recommend" /></td>
+            <td><input type="radio" name="products_recommend" /></td>
+            <td><input type="radio" name="products_recommend" /></td>
+            <td><input type="radio" name="products_recommend" /></td>
+            <td><input type="radio" name="products_recommend" /></td>
+          </tr>
+          <tr>
+            <th scope="row">Recommend our company to others</th>
+            <td><input type="radio" name="company_recommend" /></td>
+            <td><input type="radio" name="company_recommend" /></td>
+            <td><input type="radio" name="company_recommend" /></td>
+            <td><input type="radio" name="company_recommend" /></td>
+            <td><input type="radio" name="company_recommend" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h5>Additional comments or suggestions</h5>
+      <textarea name="suggestions" id="" cols="75" rows="6"></textarea><br />
+      <button class="btn btn-success">Submit</button>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

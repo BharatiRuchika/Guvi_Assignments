@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #3b3a3a;
+  font-size: 0.9rem;
+}
+
+form {
+  border: 0.8px solid #000;
+  padding-top: 10px;
+}
+
+.username {
+  display: flex;
+  gap: 4rem;
+}
+textarea {
+  width: 100%;
+}
+
+table td {
+  text-align: center;
+}
+input[type='text'] {
+  width: 100%;
+}
+#survey-form span {
+  color: #ff0000;
+}
+
+#survey-form button {
+  margin-top: 10px;
+}
+
+.fa-star {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 0.8rem;
+  }
+  .username {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+var a = 10;
+var b = 20;
+var addition = a+b;
+var multiplication = a*b;
+var substraction = a-b;
+var division = a/b;
+console.log("addition:"+addition);
+console.log("multiplication:"+multiplication);
+console.log("division:"+division);
+console.log("substratction:"+substraction);

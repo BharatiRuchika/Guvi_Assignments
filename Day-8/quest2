@@ -1,0 +1,37 @@
+Q2.UML diagram to Javascript class
+class Circle {
+  constructor(radius, color) {
+    this.radius = radius
+    this.color = color
+  }
+}
+
+class Circle1 {
+  getRadius() {
+    console.log(this.radius)
+  }
+  setRadius(radius) {
+    this.radius = radius
+  }
+
+  getColor() {
+    console.log(this.color)
+  }
+  setColor(color) {
+    this.color = color
+  }
+  getArea() {
+    console.log(Math.PI * this.radius * this.radius)
+  }
+  getCircumference() {
+    console.log(2 * Math.PI * this.radius)
+  }
+}
+
+var cr = new Circle1()
+cr.setRadius(1.0)
+cr.getRadius()
+cr.setColor('red')
+cr.getColor()
+cr.getArea()
+cr.getCircumference()
